@@ -3,10 +3,10 @@
 """User representation."""
 
 
-class User(object):
+class User:
     """Object representation of user."""
 
-    def __init__(self, name: str, age: int):
+    def __init__(self, name: str, age: int) -> None:
         """
         Construct a new user.
 
@@ -22,6 +22,6 @@ class User(object):
         Return a user's self-introduction.
 
         Returns:
-            str
+            str: A formatted introduction message
         """
-        return "Hello, i'm {self.name}, {self.age}".format(self=self)
+        return f"Hello, i'm {self.name}, {self.age}"
